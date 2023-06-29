@@ -17,6 +17,7 @@ public class ItemController {
     public ItemController(ItemService itemService) {
         this.itemService = itemService;
     }
+
     @GetMapping("/all")
     public List<Item> showall(){
         return itemService.all();
